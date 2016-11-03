@@ -4,13 +4,13 @@
 
 > TODO:
 > Given a doctor, return similar ones::
-> - [ ] Create Doctor class:
->   - [ ] expertise
->   - [ ] location
->   - [ ] review score
->   - [ ] sex
->   - [ ] age
->   - [ ] ...
+> - [x] Create Doctor class:
+>   - [x] expertise
+>   - [x] location
+>   - [x] review score
+>   - [x] gender
+>   - [x] age
+>   - [x] return dictionary
 > - [ ] Create logic:
 >   - [ ] similarity not asked
 >   - [ ] order by priority
@@ -21,4 +21,3 @@
 >   - [ ] deleting doctor
 >   - [ ] deleting qualities/specs
 >   - [ ] changing doctor specs
-
