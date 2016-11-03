@@ -55,6 +55,21 @@ def rand_languages():
             ret_langs.append(lang)
     return ret_langs
 
+def create_doctor(i):
+    gender = rand_gender()
+    doc = Doctor(
+        i,
+        rand_fname(gender),
+        rand_lname(),
+        gender,
+        rand_age(),
+        rand_expertise(),
+        rand_location(),
+        rand_scores(),
+        rand_languages()
+    )
+    return doc
+
 if __name__ == "__main__":
 
     data = []
@@ -65,19 +80,8 @@ if __name__ == "__main__":
         except:
             pass
 
-    for i in xrange(99):
-        gender = rand_gender()
-        doc = Doctor(
-            i,
-            rand_fname(gender),
-            rand_lname(),
-            gender,
-            rand_age(),
-            rand_expertise(),
-            rand_location(),
-            rand_scores(),
-            rand_languages()
-        )
+    for i in xrange(500):
+        doc = create_doctor(i)
         data.append(doc.get_dictionary())
 
     with open('data/doctors.json', 'w') as f:

@@ -56,7 +56,8 @@ class Doctor(object):
 
     def get_review_score(self):
         # TODO write logic to calculate score
-        return self.__review_scores
+
+        return sum(self.__review_scores)/len(self.__review_scores)
 
     def get_languages(self):
         return self.__languages
@@ -70,6 +71,6 @@ class Doctor(object):
             'age': self.__age,
             'expertise': self.__expertise,
             'location': self.__location,
-            'review_score': self.__review_scores,
+            'review_score': self.get_review_score(),
             'languages': self.__languages
         }
