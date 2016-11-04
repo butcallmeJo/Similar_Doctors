@@ -15,4 +15,5 @@ if __name__ == "__main__":
             pass
 
     doc = create_doctor(0)
+    
     similar_doctor = return_similar_doctors(doc, doctors)

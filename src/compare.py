@@ -19,16 +19,13 @@ def return_similar_doctors(doctor, doctors):
     print doc.get_review_score()
     print doc.get_languages()
 
-    # print data
     data = order_location(doc, data)
     data = order_expertise(doc, data)
     data = order_gender(doc, data)
     data = order_languages(doc, data)
     data = order_age(doc, data)
-    # print data
     data = order_scores(data)
 
-    # print data
 
     for i in range(min(10, len(data))):
         print "i:", i
